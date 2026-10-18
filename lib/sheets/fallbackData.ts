@@ -1,0 +1,165 @@
+import { Profile, Project, Experience } from "@/types";
+
+export const fallbackProfile: Profile = {
+  name: "Jomari",
+  handle: "jomari.dev",
+  title: "Principal Fullstack Engineer & UI Architect",
+  tagline: "Sculpting technical performance into immersive, high-speed digital products.",
+  bio: "Fullstack software engineer with deep expertise in TypeScript, React/Next.js systems, serverless infrastructure, and edge data architectures. Focused on building zero-latency web applications, resilient API microservices, and elegant developer tools with obsessive attention to craft.",
+  status: "Available for engineering roles & select technical advisory",
+  availability: "available",
+  location: "Manila, PH / Remote Worldwide",
+  timezone: "Asia/Manila (UTC+8)",
+  email: "jomari.engr@gmail.com",
+  github: "https://github.com",
+  linkedin: "https://linkedin.com",
+  skills: [
+    "TypeScript",
+    "Next.js 16 (App Router)",
+    "React 19",
+    "Node.js",
+    "PostgreSQL",
+    "Tailwind CSS v4",
+    "Google Sheets API v4",
+    "Serverless & Edge",
+    "Vercel",
+    "Docker",
+    "GraphQL",
+    "Zod",
+    "CI/CD (GitHub Actions)",
+  ],
+};
+
+export const fallbackProjects: Project[] = [
+  {
+    id: "proj-1",
+    title: "ApexPulse · Cloud Observability & Telemetry Engine",
+    description:
+      "A real-time distributed systems monitoring console processing 50k+ metrics/sec. Built with TypeScript, Next.js server actions, ClickHouse, and WebSockets for sub-100ms streaming charts.",
+    category: "Fullstack",
+    tags: ["TypeScript", "Next.js", "WebSockets", "ClickHouse", "Tailwind CSS"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://vercel.com",
+    featured: true,
+    year: "2026",
+    order: 1,
+  },
+  {
+    id: "proj-2",
+    title: "SheetDB · Serverless Edge Headless CMS",
+    description:
+      "A zero-overhead database wrapper turning Google Sheets into high-throughput REST & GraphQL endpoints with automated Zod validation, ISR edge caching, and atomic write queues.",
+    category: "Backend / API",
+    tags: ["TypeScript", "Google Sheets API", "Vercel Edge", "Zod", "Serverless"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://vercel.com",
+    featured: true,
+    year: "2026",
+    order: 2,
+  },
+  {
+    id: "proj-3",
+    title: "Krypton · Minimalist High-Density Design System",
+    description:
+      "An open-source accessible React/Tailwind component library engineered for technical dashboards, developer consoles, and high-frequency trading terminals with zero layout shifts.",
+    category: "Frontend / UI",
+    tags: ["React 19", "Tailwind CSS v4", "TypeScript", "Accessibility", "Design Systems"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://vercel.com",
+    featured: true,
+    year: "2025",
+    order: 3,
+  },
+  {
+    id: "proj-4",
+    title: "Vortex · Distributed Task & Workflow Orchestrator",
+    description:
+      "Resilient background worker pipeline featuring priority queues, automated backoff retry policies, and telemetry tracing dashboards deployed across multi-region serverless clusters.",
+    category: "Fullstack",
+    tags: ["TypeScript", "Node.js", "Redis", "Next.js", "Docker"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://vercel.com",
+    featured: false,
+    year: "2025",
+    order: 4,
+  },
+  {
+    id: "proj-5",
+    title: "Chronos · Real-Time Collaborative Canvas",
+    description:
+      "Infinite collaborative whiteboard and architecture diagramming web app utilizing CRDTs (Yjs) for conflict-free multi-user live cursors and shape synchronization.",
+    category: "Frontend / UI",
+    tags: ["TypeScript", "Canvas API", "CRDT", "WebSockets", "Vite"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://vercel.com",
+    featured: false,
+    year: "2025",
+    order: 5,
+  },
+  {
+    id: "proj-6",
+    title: "EnvSync · Developer CLI for Cloud Secrets",
+    description:
+      "Cross-platform command-line tool written in TypeScript for end-to-end encrypted secret syncing between GitHub Actions, Vercel, and local developer workstations.",
+    category: "Open Source",
+    tags: ["TypeScript", "Node CLI", "Cryptography", "GitHub API", "Open Source"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://github.com",
+    featured: false,
+    year: "2024",
+    order: 6,
+  },
+];
+
+export const fallbackExperiences: Experience[] = [
+  {
+    id: "exp-1",
+    role: "Lead Fullstack & Systems Engineer",
+    company: "Nexus Labs",
+    companyUrl: "https://nexuslabs.dev",
+    period: "2024 — Present",
+    location: "Remote / San Francisco, CA",
+    description:
+      "Architecting next-generation distributed web applications and high-throughput serverless microservices. Leading technical initiatives on zero-latency frontends and scalable data ingestion pipelines.",
+    achievements: [
+      "Reduced median API response times from 340ms to 42ms by migrating legacy monolithic routes to Next.js App Router with Vercel Edge middleware caching.",
+      "Engineered automated CI/CD pipelines on GitHub Actions reducing deployment failure rates to zero.",
+      "Mentored a team of 8 fullstack engineers on TypeScript strict patterns and React Server Components best practices.",
+    ],
+    technologies: ["TypeScript", "Next.js", "React", "PostgreSQL", "Tailwind CSS", "Vercel", "Docker"],
+    order: 1,
+  },
+  {
+    id: "exp-2",
+    role: "Senior Frontend Engineer & UI Architect",
+    company: "Aether Dynamics",
+    companyUrl: "https://aetherdynamics.io",
+    period: "2022 — 2024",
+    location: "Remote / Singapore",
+    description:
+      "Spearheaded design system modernization and core product frontend re-architecture for enterprise analytics dashboards handling billions of data points.",
+    achievements: [
+      "Designed and published modular UI component design system adopted by 4 cross-functional product teams.",
+      "Achieved 100/100 Core Web Vitals across all public and authenticated client dashboards.",
+      "Implemented comprehensive automated end-to-end testing suite reducing regression tickets by 68%.",
+    ],
+    technologies: ["TypeScript", "React", "Tailwind CSS", "Next.js", "GraphQL", "Jest", "Cypress"],
+    order: 2,
+  },
+  {
+    id: "exp-3",
+    role: "Fullstack Software Developer",
+    company: "Starlight Digital",
+    companyUrl: "https://starlight.tech",
+    period: "2020 — 2022",
+    location: "Manila, PH",
+    description:
+      "Developed bespoke fullstack client portals, e-commerce platforms, and internal automation tooling integrating headless CMS architectures with third-party payment gateways.",
+    achievements: [
+      "Built serverless integration gateways connecting Google Sheets and Airtable APIs as dynamic backends for client rapid prototyping.",
+      "Authored REST APIs and webhook ingestion workers handling high-volume transaction notices with zero data loss.",
+    ],
+    technologies: ["TypeScript", "Node.js", "Express", "React", "MongoDB", "Google Sheets API", "AWS"],
+    order: 3,
+  },
+];
